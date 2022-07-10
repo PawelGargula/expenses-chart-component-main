@@ -132,6 +132,7 @@ ul li {
     top: -3.2rem;
     transform: translate(50%);
     width: 4.5rem;
+    z-index: 1;
 }
 
 .current-day {
@@ -173,4 +174,10 @@ ul li {
 .from-last-month strong {
     font-size: calc(var(--font-size) + .2rem);
     font-weight: 700;
+}
+
+@media (min-width: 800px) {
+    .bar {
+        height: 13rem;
+    }
 }
