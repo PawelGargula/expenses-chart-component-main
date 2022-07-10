@@ -28,7 +28,7 @@ body {
 
 main {
     min-width: auto;
-    max-width: 400px; /* Can add it on mediaqueries */
+    max-width: 40rem;
     width: 100%;
 }
 
@@ -91,11 +91,10 @@ h1 + p > strong {
 }
 
 ul {
-    /* Maybe use height here at start intead of on .bar */
     align-items: flex-end;
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     gap: 1.2rem;
     list-style-type: none;
 }
@@ -126,7 +125,7 @@ ul li {
     border-radius: var(--bar-radius);
     color: white;
     content: attr(data-amount);
-    padding: .5rem;
+    padding: .4rem;
     position: absolute;
     right: 50%;
     text-align: center;
@@ -146,7 +145,7 @@ ul li {
 }
 
 .this-month {
-    --font-size: 1.4rem;
+    --font-size: 1.5rem;
     align-items: center;
     display: flex;
     padding-top: var(--padding);
@@ -160,7 +159,7 @@ ul li {
 }
 
 .this-month strong {
-    font-size: 2.9rem;
+    font-size: 3.1rem;
 }
 
 .from-last-month {
@@ -175,7 +174,3 @@ ul li {
     font-size: calc(var(--font-size) + .2rem);
     font-weight: 700;
 }
-
-/* @media (min-width: 500px) {
-
-} */
