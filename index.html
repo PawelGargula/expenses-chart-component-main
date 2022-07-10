@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main>
+    <section>
+      <header class="my-balance">
+        <div class="my-balance">
+          <h1>My balance</h1>
+          <p><strong>$921.48</strong></p>
+        </div>
+      </header>
 
-  My balance
-  $921.48
+      <div class="summary">
+        <div class="last-7-days">
+          <h2>Spending - Last 7 days</h2>
+          <ul>
+            <li data-day="mon" data-amount="17.45">
+              <div class="collumn"></div>
+              <span class="day">mon</span>
+            </li>
+            <li data-day="tue" data-amount="34.91">
+              <div class="collumn"></div>
+              <span class="day">tue</span>
+            </li>
+            <li data-day="wed" data-amount="52.36">
+              <div class="collumn current-day"></div>
+              <span class="day">wed</span>
+            </li>
+            <li data-day="thu" data-amount="31.07">
+              <div class="collumn"></div>
+              <span class="day">thu</span>
+            </li>
+            <li data-day="fir" data-amount="23.39">
+              <div class="collumn"></div>
+              <span class="day">fri</span>
+            </li>
+            <li data-day="sat" data-amount="43.28">
+              <div class="collumn"></div>
+              <span class="day">sat</span>
+            </li>
+            <li data-day="sun" data-amount="25.48">
+              <div class="collumn"></div>
+              <span class="day">sun</span>
+            </li>
+          </ul>
+        </div>
 
-  Spending - Last 7 days
+        <div class="this-month">
+          <div>
+            <h2>Total this month</h2>
+            <p><strong>$478.33</strong></p>
+          </div>
+          <p class="from-last-month">
+            <strong>+2.4%</strong>
+            <span>from last month</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- <footer class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+    <span>Coded by <a href="#">Paweł Gargula</a>.</span>
+  </footer> -->
 </body>
+
 </html>
