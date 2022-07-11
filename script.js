@@ -7,10 +7,9 @@ const amounts  = objects.map(object => object.amount);
 const maxAmount = Math.max(...amounts);
 
 bars.forEach(bar => {
-    const foundObject = objects.find(object => object.day === bar.dataset.day);
-    const amount = foundObject.amount;
+    const { amount } = objects.find(object => object.day === bar.dataset.day);
     bar.dataset.amount = `$${amount}`;
 
     const height = amount / maxAmount * barMaxHeight;
-    bar.style.height = `${amount / maxAmount * barMaxHeight}px`;
+    bar.style.height = `${height}px`;
 });
