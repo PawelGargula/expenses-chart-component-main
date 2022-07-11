@@ -103,13 +103,21 @@ ul li {
     flex: 1 1 0px;
 }
 
+.bar-placeholder {
+    position: relative;
+    height: 15rem;
+}
+
 .bar {
     --bar-radius: .4rem;
     border-radius: var(--bar-radius);
     background-color: var(--soft-red-color);
     cursor: pointer;
-    height: 15rem;
-    position: relative;
+    height: .1rem;
+    width: 100%;
+    position: absolute;
+    transition: 2.5s ease height;
+    bottom: 0;
 }
 
 .bar:hover {
@@ -177,7 +185,7 @@ ul li {
 }
 
 @media (min-width: 800px) {
-    .bar {
+    .bar-placeholder {
         height: 13rem;
     }
 }

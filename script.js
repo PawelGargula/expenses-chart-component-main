@@ -1,7 +1,7 @@
 import objects from './data.json' assert { type: 'json' };
 
 const bars = document.querySelectorAll('.bar');
-const barMaxHeight = bars[0].offsetHeight;
+const barMaxHeight = document.querySelector('.bar-placeholder').offsetHeight;
 
 const amounts  = objects.map(object => object.amount);
 const maxAmount = Math.max(...amounts);
