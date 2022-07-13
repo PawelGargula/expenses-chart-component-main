@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/PawelGargula/expenses-chart-component-main)
-- Live Site URL: [Add live site URL here](https://pawelgargula.github.io/expenses-chart-component-main/)
+- Solution URL: [Github respository](https://github.com/PawelGargula/expenses-chart-component-main)
+- Live Site URL: [Live site on github pages](https://pawelgargula.github.io/expenses-chart-component-main/)
 
 ## My process
  1. Build sematic HTML
