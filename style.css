@@ -19,6 +19,7 @@ body {
     align-items: center;
     background-color: var(--cream-color);
     display: flex;
+    flex-direction: column;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     justify-content: center;
@@ -64,7 +65,7 @@ h1 {
     margin-bottom: calc(var(--gap) / 2);
 }
 
-h1 + p > strong {
+h1+p>strong {
     font-size: 2.3rem;
     font-weight: 700;
 }
@@ -76,7 +77,8 @@ h1 + p > strong {
     padding: var(--padding);
 }
 
-.last-7-days h2, .summary strong {
+.last-7-days h2,
+.summary strong {
     color: var(--dark-brown-color);
 }
 
@@ -182,6 +184,15 @@ ul li {
 .from-last-month strong {
     font-size: calc(var(--font-size) + .2rem);
     font-weight: 700;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 800px) {
