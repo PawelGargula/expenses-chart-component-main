@@ -9,6 +9,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Time to complete](#time-to-complete)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
@@ -41,6 +42,9 @@ Users should be able to:
  1. Build sematic HTML
  2. Style elements
  3. Write javascript for dynamicly creating bars depending on data on data.json file
+
+### Time to complete
+10 hours (20 pomodoro)
 
 ### Built with
 - Semantic HTML5 markup
