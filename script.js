@@ -10,6 +10,8 @@ bars.forEach(bar => {
     const { amount } = objects.find(object => object.day === bar.dataset.day);
     bar.dataset.amount = `$${amount}`;
 
-    const height = amount / maxAmount * barMaxHeight;
+    let height = amount / maxAmount * barMaxHeight;
+    // Want it to grow from 1px
+    height = (isNaN(height) || height < 1) ? 1 : height;
     bar.style.height = `${height}px`;
 });
